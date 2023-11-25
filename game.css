@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/img/espaco.jpg');
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    color: white;
+    
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.100);
+    font-family: 'Pacifico', cursive;
+}
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    max-width: 500px;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 10px;
+
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+    transition: all 400ms ease;
+
+}
+.front{
+   
+    transform: rotateY(180deg);
+
+ 
+}
+.back{
+    background-image: url('/img/apolo.jpg');
+    backface-visibility: hidden;
+}
+.reveal-card{
+    transform: rotateY(180deg);
+   
+  }  
+  .disabled-card{
+    
+    border: 5px solid rgb(0, 0, 145);
+  }
+

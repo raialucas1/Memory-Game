@@ -48,7 +48,7 @@ const restartGame=()=>{
     //reinicia o game
     loadGame();
     startTimer();
-    window.location='/pages/index.html';
+    window.location='index.html';
 
 
 
@@ -99,7 +99,7 @@ const createCard=(character)=>{
     const card=createElement('div','card');//cria uma carta
     const front=createElement('div','face front');//cria a parte da frente da carta
     const back=createElement('div','face back');// cria a parte de trás da carta
-    front.style.backgroundImage=`url('/img/${character}.png')`;//coloca uma imagem na carta
+    front.style.backgroundImage=`url('/img/${character}.jpg')`;//coloca uma imagem na carta
     card.appendChild(front);//adiciona a parte da frente a carta
     card.appendChild(back);//adiciona a parte de trás a carta
     grid.appendChild(card);//adiciona a a carta na grid

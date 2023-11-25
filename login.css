@@ -14,7 +14,7 @@
    
 }
 body{
-    background-image: url(/img/fundoJogo.jpg);
+    background-image: url(fundoJogo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

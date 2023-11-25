@@ -4,7 +4,7 @@ main{
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    background-image: url('/img/espaco.jpg');
+    background-image: url('espaco.jpg');
     align-items: center;
     justify-content: center;
     padding: 20px 20px 50px;
@@ -61,7 +61,7 @@ header{
  
 }
 .back{
-    background-image: url('/img/apolo.jpg');
+    background-image: url('apolo.jpg');
     backface-visibility: hidden;
 }
 .reveal-card{

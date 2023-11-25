@@ -13,7 +13,7 @@ const handleSubmit=(event)=>{
     event.preventDefault();
 
     localStorage.setItem('player',input.value);//coloca um usuário no localStorage
-    window.location='/pages/game.html';//direciona o usuário para a página do game
+    window.location='game.html';//direciona o usuário para a página do game
     console.log('logando...');
 }
 input.addEventListener('input',validateInput);
